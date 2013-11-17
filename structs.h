@@ -22,7 +22,7 @@ public:
 
     }
 
-    bool operator== (team &_team){
+    bool operator== (const team &_team){
         return teamName == _team.getTeamName();
     }
 
@@ -118,6 +118,19 @@ public:
     void setSecondTeam(const team& _team) {
         secondTeam = _team;
     }
+
+    int getAlianceGamesSum() const {
+        return firstTeam.getGamesNum() + secondTeam.getGamesNum();
+    }
+
+    team getFirstTeam() const {
+        return firstTeam;
+    }
+
+    team getSecondTeam() const {
+        return secondTeam;
+    }
+
 
 };
 
