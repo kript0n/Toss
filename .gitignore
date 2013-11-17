@@ -1,0 +1,6 @@
+*.html
+*.o
+*.exe
+debug/
+release/
+Makefile*
